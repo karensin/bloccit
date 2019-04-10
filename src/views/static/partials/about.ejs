@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <% include ./head.ejs %>
-    </head>
 
-    <body>
-        <% include ./navbar.ejs %>
-        <main class="container">
-            <header class="jumbotron my-4">
-                <h1 class="display-3">Welcome to Bloccit</h1>
-                <p class="lead">An application for users to share information.</p>
-                <a href="#" class="btn btn-primary btn-lg">Sign up</a>
-            </header>
+<head>
+	<% include ./partials/head.ejs %>
+</head>
 
-            <section class="about-us">
-                <p>About Us.</p>
-            </section>
-        </main>
-        <% include ./baseScripts.ejs %>
-    </body>
+<body>
 
+	<% include ./partials/navbar.ejs %>
+
+	<main class="container">
+		<h2>About Us</h2>
+	</main>
+
+	<% include ./partials/baseScripts.ejs %>
+
+</body>
 </html>
