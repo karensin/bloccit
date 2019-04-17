@@ -39,6 +39,4 @@ describe("routes : topics", () => {
          });
        });
 
-
-  });
 });
