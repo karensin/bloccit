@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
    foreignKey: "topicId",
    as: "rules",
  });
-  // associations can be defined here
-  };
+ Topic.hasMany(models.Advertisement, {
+     	foreignKey: "topicId",
+     	as: "advertisements",
+     });
+ };
   return Topic;
 };

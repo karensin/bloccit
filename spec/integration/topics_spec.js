@@ -4,7 +4,6 @@ const base = "http://localhost:3000/topics/";
 const sequelize = require("../../src/db/models/index").sequelize;
 const Topic = require("../../src/db/models").Topic;
 
-
 describe("routes : topics", () => {
   beforeEach((done) => {
     this.topic;
@@ -152,11 +151,8 @@ describe("routes : topics", () => {
            .then((topic) => {
              expect(topic.title).toBe("JavaScript Frameworks");
              done();
-           });
          });
+       });
      });
-
    });
-
-
 });
