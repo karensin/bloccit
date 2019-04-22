@@ -15,10 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Advertisement.associate = function(models) {
     // associations can be defined here
-    Advertisement.belongsTo(models.Topic, {
-    	foreignkey: "topicId",
-    	onDelete: "CASCADE",
-    });
+     
   };
   return Advertisement;
 };
