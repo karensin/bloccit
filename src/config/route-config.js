@@ -7,5 +7,5 @@ module.exports = {
     app.use(staticRoutes);
     app.use(topicRoutes);
     app.use(advertisementRoutes);
-  }
+   }
 }
