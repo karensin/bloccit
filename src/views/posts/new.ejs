@@ -6,8 +6,9 @@
   <body>
     <% include ../static/partials/navbar.ejs %>
 
-     <main class="container">
+    <main class="container">
       <h1>New Post</h1>
+<!-- #1 define the form and point it to the'create' action of the 'post' controller via a POST request-->
       <form action="/topics/<%= topicId %>/posts/create" method="post">
         <div class="form-group">
           <label for="title">Post title</label>
@@ -21,7 +22,7 @@
       </form>
     </main>
 
-     <% include ../static/partials/baseScripts.ejs %>
+    <% include ../static/partials/baseScripts.ejs %>
 
-   </body>
+  </body>
 </html>

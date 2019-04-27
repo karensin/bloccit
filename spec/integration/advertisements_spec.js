@@ -11,7 +11,7 @@ describe("routes : advertisements", () => {
 
         Advertisement.create({
           title: "Dog toys advertisement",
-          description: "Interactive dog toys "
+          description: "Interactive dog toys"
         })
         .then((advertisement) => {
           this.advertisement = advertisement;
