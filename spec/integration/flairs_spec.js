@@ -6,7 +6,7 @@ const base = "http://localhost:3000/posts";
 const Topic = require("../../src/db/models").Topic;
 const Post = require("../../src/db/models").Post;
 const Flair = require("../../src/db/models").Flair;
-
+//
  describe("routes : flairs", () => {
 
      beforeEach((done) => {
