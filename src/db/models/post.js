@@ -12,8 +12,11 @@ module.exports = (sequelize, DataTypes) => {
      topicId: {
           type: DataTypes.INTEGER,
           allowNull: false
+        },
+        userId: {
+          type: DataTypes.INTEGER,
+          allowNull: false
         }
-
       }, {});
   Post.associate = function(models) {
     // associations can be defined here
@@ -25,6 +28,11 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: "postId",
       as: "flairs"
     });
+    Post.belongsTo(models.User, {
+     foreignKey: "userId",
+     onDelete: "CASCADE"
+   });   
+
   };
   return Post;
 };
